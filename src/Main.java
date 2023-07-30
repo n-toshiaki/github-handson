@@ -37,11 +37,12 @@ public class Main {
         greeting.add("Long time no see");
 
         for(int i = 0; i<=3; i++){
-            if(greeting.get(i) != null){
+            try{
                 System.out.println(greeting.get(i));
                 System.out.println(greeting.get(i).length());
-            }else{
+            }catch(NullPointerException e ){
                 System.out.println("greeting.get(" + i + ") is null");
+                System.out.println(e);
             }
 
         }
