@@ -40,7 +40,7 @@ public class Main {
             try{
                 System.out.println(greeting.get(i));
                 System.out.println(greeting.get(i).length());
-            }catch(NullPointerException e ){
+            }catch(NullPointerException e){
                 System.out.println("greeting.get(" + i + ") is null");
                 System.out.println(e);
             }
