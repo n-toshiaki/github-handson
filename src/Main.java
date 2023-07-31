@@ -42,7 +42,7 @@ public class Main {
                 System.out.println(greeting.get(i).length());
             }catch(NullPointerException e){
                 System.out.println("greeting.get(" + i + ") is null");
-                System.out.println(e);
+                e.printStackTrace();
             }
 
         }
